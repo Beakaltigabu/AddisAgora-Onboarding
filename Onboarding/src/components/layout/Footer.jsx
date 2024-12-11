@@ -45,7 +45,7 @@ const Footer = () => {
               alt="AddisAgora Logo"
               className="h-12 mb-4"
             />
-            <p className="text-white/80">Empowering Ethiopian voices worldwide</p>
+            <p className="text-white/80">Empowering communicators, inspiring leaders, transforming the world</p>
           </div>
 
           <div>
