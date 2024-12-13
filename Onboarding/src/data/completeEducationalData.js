@@ -1,333 +1,489 @@
-export const basicEducationalPath = {
-    title: "Basic Educational Path",
-    description: "",
-    certification: "Qualified Speaker Award",
-    isRequired: true,
-    sections: [
-      {
-        title: "Basic Interpersonal Communication",
-        description: "Build confidence speaking in front of an audience",
-        milestone: {
-          name: "Foundation Speaker",
-          requirements: "Complete all 4 projects in this section",
-          badge: "🎯"
-        },
-        projects: [
-          {
-            number: 1,
-            title: "The First Project",
-            objective: "Familiarize with Agora's projects and evaluation system",
-            description: "Take on a simple meeting role and learn the basics of delivering reports and receiving feedback.",
-            deliverables: [
-              "Brief role description at meeting start",
-              "Clear report at meeting end",
-              "Demonstrate understanding of evaluation process"
-            ],
-            time: "1-3 minutes",
-            tools: "Microphone and lectern optional; notes allowed",
-            tips: [
-              "Choose a role you're comfortable with",
-              "Practice your timing beforehand",
-              "Focus on clear, concise delivery"
-            ]
-          },
-          {
-            number: 2,
-            title: "Speaking About Things You Like",
-            objective: "Speak comfortably about familiar subjects",
-            description: "Deliver a speech about a topic you're passionate about, focusing on natural delivery and engagement.",
-            deliverables: [
-              "Short presentation on something you enjoy",
-              "Personal opinion with justification",
-              "Conversational style delivery"
-            ],
-            time: "2-4 minutes",
-            tools: "Microphone, lectern, and notes optional",
-            tips: [
-              "Choose a topic you're genuinely excited about",
-              "Practice maintaining eye contact",
-              "Use personal examples"
-            ]
-          },
-          {
-            number: 3,
-            title: "Who Am I?",
-            objective: "Discover your speaking style",
-            description: "Share your personal story and professional journey in a structured speech.",
-            deliverables: [
-              "Personal introduction speech",
-              "Balance of personal and professional content",
-              "Clear opening, body, and conclusion"
-            ],
-            time: "4-6 minutes",
-            tools: "Microphone, lectern, and notes optional",
-            tips: [
-              "Share meaningful experiences",
-              "Include both challenges and successes",
-              "Connect with your audience personally"
-            ]
-          },
-          {
-            number: 4,
-            title: "Speech Structure",
-            objective: "Master key structural components",
-            description: "Learn and apply the fundamental structure of effective speeches.",
-            deliverables: [
-              "Distinct opening, body, and conclusion",
-              "Smooth transitions between sections",
-              "Use of basic speech ordering (chronological, spatial, causal, etc.)"
-            ],
-            time: "5-7 minutes",
-            tools: "Microphone, lectern, and notes optional",
-            tips: [
-              "Plan your structure beforehand",
-              "Practice transitions",
-              "Consider audience cognitive limitations"
-            ]
-          }
-        ]
+export const basicEducationalPath =
+ {
+  "title": "Basic Educational Path",
+  "description": "",
+  "certification": "Qualified Speaker Award",
+  "isRequired": true,
+  "sections": [
+    {
+      "title": "Basic Interpersonal Communication",
+      "description": "Build confidence speaking in front of an audience",
+      "milestone": {
+        "name": "Foundation Speaker",
+        "requirements": "Complete all 4 projects in this section",
+        "badge": "🎯"
       },
-      {
-        title: "Small-group Communication",
-        description: "Learn fundamental public speaking techniques",
-        milestone: {
-          name: "Skilled Communicator",
-          requirements: "Complete all 4 projects in this section",
-          badge: "💫"
+      "projects": [
+        {
+          "number": 1,
+          "title": "The First Project",
+          "objective": "Familiarize with Agora's projects and evaluation system",
+          "description": "Take on a simple meeting role and learn the basics of delivering reports and receiving feedback.",
+          "deliverables": [
+            "Brief role description at meeting start",
+            "Clear report at meeting end",
+            "Demonstrate understanding of evaluation process"
+          ],
+          "time": "1-3 minutes",
+          "tools": "Microphone, lectern, and notes optional",
+          "tips": [
+            "Choose a role that aligns with your interests",
+            "Practice your report beforehand",
+            "Be receptive to feedback"
+          ]
         },
-        projects: [
-          {
-            number: 5,
-            title: "Speech Message",
-            objective: "Explore different speech types and key messaging",
-            description: "Create and deliver a speech with a single, powerful key message.",
-            deliverables: [
-              "Clear central message",
-              "Audience-focused content",
-              "Prompt addressing of audience needs"
-            ],
-            time: "5-7 minutes",
-            tools: "Basic presentation tools",
-            tips: [
-              "Research your audience",
-              "Focus on one main message",
-              "Practice clear delivery"
-            ]
-          },
-          {
-            number: 6,
-            title: "Vocal Variety",
-            objective: "Use voice effectively",
-            description: "Master the use of pace, pitch, and volume in speech delivery.",
-            deliverables: [
-              "Various vocal techniques demonstrated",
-              "Engaging vocal delivery",
-              "Appropriate emphasis on key points"
-            ],
-            time: "6-8 minutes",
-            tools: "Voice recording optional",
-            tips: [
-              "Practice different vocal patterns",
-              "Record and analyze your speech",
-              "Match voice to content"
-            ]
-          },
-          {
-            number: 7,
-            title: "Body Language",
-            objective: "Master non-verbal communication",
-            description: "Learn to use gestures, movement, and facial expressions effectively.",
-            deliverables: [
-              "Appropriate body language",
-              "Purposeful gestures",
-              "Engaging facial expressions"
-            ],
-            time: "6-8 minutes",
-            tools: "Video recording optional",
-            tips: [
-              "Practice in front of a mirror",
-              "Record your movements",
-              "Align gestures with content"
-            ]
-          },
-          {
-            number: 8,
-            title: "Researching A Topic",
-            objective: "Develop research and presentation skills",
-            description: "Research, organize, and present complex information clearly.",
-            deliverables: [
-              "Well-researched technical content",
-              "Clear presentation with handouts",
-              "Effective Q&A session"
-            ],
-            time: "7-9 minutes",
-            tools: "Handouts required, distribute before meeting",
-            tips: [
-              "Use credible sources",
-              "Organize information logically",
-              "Prepare for technical questions"
-            ]
-          }
-        ]
+        {
+          "number": 2,
+          "title": "Speaking about things you like",
+          "objective": "Practice speaking in a relaxed, conversational style",
+          "description": "Deliver a short speech about a topic you enjoy, focusing on connecting with the audience.",
+          "deliverables": [
+            "Engaging speech on a familiar topic",
+            "Conversational tone and delivery",
+            "Effective time management"
+          ],
+          "time": "2-4 minutes",
+          "tools": "Microphone and lectern optional",
+          "tips": [
+            "Choose a topic you're passionate about",
+            "Speak naturally and authentically",
+            "Practice maintaining a comfortable pace"
+          ]
+        },
+        {
+          "number": 3,
+          "title": "Who Am I?",
+          "objective": "Discover your speaking style",
+          "description": "Share your personal story and professional journey in a structured speech.",
+          "deliverables": [
+            "Personal introduction speech",
+            "Balance of personal and professional content",
+            "Clear opening, body, and conclusion"
+          ],
+          "time": "4-6 minutes",
+          "tools": "Microphone, lectern, and notes optional",
+          "tips": [
+            "Share meaningful experiences",
+            "Include both challenges and successes",
+            "Connect with your audience personally"
+          ]
+        },
+        {
+          "number": 4,
+          "title": "Speech Structure",
+          "objective": "Master key structural components",
+          "description": "Learn and apply the fundamental structure of effective speeches.",
+          "deliverables": [
+            "Distinct opening, body, and conclusion",
+            "Smooth transitions between sections",
+            "Effective use of an organizational pattern"
+          ],
+          "time": "5-7 minutes",
+          "tools": "Microphone, lectern, and notes optional",
+          "parts": [
+            {
+              "part": 1,
+              "type": "Speech Analysis",
+              "description": "Analyze a selected speech for its structural elements and present your analysis."
+            },
+            {
+              "part": 2,
+              "type": "Speech Practice",
+              "description": "Deliver a speech with a clear and well-defined structure."
+            }
+          ],
+          "tips": [
+            "Practice identifying different structural elements",
+            "Experiment with various organizational patterns",
+            "Focus on creating a logical flow"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Small-group Communication",
+      "description": "Learn fundamental public speaking techniques",
+      "milestone": {
+        "name": "Skilled Communicator",
+        "requirements": "Complete all 4 projects in this section",
+        "badge": "💫"
       },
-      {
-        title: "Speaking Techniques",
-        description: "Refine advanced speaking skills",
-        milestone: {
-          name: "Advanced Speaker",
-          requirements: "Complete all 8 projects in this section",
-          badge: "🌟"
+      "projects": [
+        {
+          "number": 5,
+          "title": "Speech Message",
+          "objective": "Explore different speech types and key messaging",
+          "description": "Create and deliver a speech with a single, powerful key message.",
+          "deliverables": [
+            "Clear identification of speech type",
+            "Concise and impactful key message",
+            "Speech content supports the central message"
+          ],
+          "time": "5-7 minutes",
+          "tools": "Microphone, lectern, and notes optional",
+          "parts": [
+            {
+              "part": 1,
+              "type": "Speech Analysis",
+              "description": "Analyze a selected speech for its purpose and key message and present your analysis."
+            },
+            {
+              "part": 2,
+              "type": "Speech Practice",
+              "description": "Deliver a speech with a clear purpose and a well-defined message."
+            }
+          ],
+          "tips": [
+            "Research different speech types",
+            "Practice crafting compelling messages",
+            "Ensure all elements contribute to the central idea"
+          ]
         },
-        projects: [
-          {
-            number: 9,
-            title: "Speech Development",
-            objective: "Master rhetorical devices",
-            description: "Learn and apply various rhetorical techniques in speeches.",
-            deliverables: [
-              "Multiple rhetorical devices used",
-              "Effective argumentation",
-              "Persuasive delivery"
-            ],
-            time: "7-9 minutes",
-            tools: "No notes allowed",
-            tips: [
-              "Study different rhetorical devices",
-              "Practice timing and delivery",
-              "Focus on audience impact"
-            ]
-          },
-          {
-            number: 10,
-            title: "Knowing Your Audience",
-            objective: "Research and adapt to audience needs",
-            description: "Learn to analyze and adapt your message to different audiences.",
-            deliverables: [
-              "Audience analysis demonstrated",
-              "Adapted content and delivery",
-              "Flexible response to audience mood"
-            ],
-            time: "8-10 minutes",
-            tools: "No lectern or notes allowed",
-            tips: [
-              "Research audience beforehand",
-              "Prepare flexible content",
-              "Monitor audience reactions"
-            ]
-          },
-          {
-            number: 11,
-            title: "Presentation Software",
-            objective: "Use presentation software effectively",
-            description: "Master the use of visual aids and presentation tools.",
-            deliverables: [
-              "Effective slides",
-              "Seamless software operation",
-              "Professional delivery"
-            ],
-            time: "8-10 minutes",
-            tools: "Presentation software required; no lectern or notes",
-            tips: [
-              "Design simple, effective slides",
-              "Practice with equipment",
-              "Prepare backup plans"
-            ]
-          },
-          {
-            number: 12,
-            title: "Inconvenient Allies",
-            objective: "Master microphone techniques",
-            description: "Learn to manage microphones while maintaining presence.",
-            deliverables: [
-              "Effective microphone handling",
-              "Maintained body language",
-              "Professional stage presence"
-            ],
-            time: "8-10 minutes",
-            tools: "Hand-held or lectern microphone",
-            tips: [
-              "Practice microphone techniques",
-              "Maintain natural movement",
-              "Focus on voice projection"
-            ]
-          },
-          {
-            number: 13,
-            title: "Using Humor",
-            objective: "Incorporate humor effectively",
-            description: "Learn to use appropriate humor to enhance speeches.",
-            deliverables: [
-              "Significant humorous content",
-              "Appropriate humor usage",
-              "Effective timing"
-            ],
-            time: "8-10 minutes",
-            tools: "No notes allowed",
-            tips: [
-              "Know your audience",
-              "Practice timing",
-              "Keep humor appropriate"
-            ]
-          },
-          {
-            number: 14,
-            title: "Using Anecdotes",
-            objective: "Master storytelling techniques",
-            description: "Incorporate personal stories and anecdotes effectively.",
-            deliverables: [
-              "Two distinct anecdotes",
-              "One personal story",
-              "Engaging narrative flow"
-            ],
-            time: "8-10 minutes",
-            tools: "No notes allowed",
-            tips: [
-              "Choose relevant stories",
-              "Practice narrative structure",
-              "Connect emotionally"
-            ]
-          },
-          {
-            number: 15,
-            title: "Using Emotion",
-            objective: "Evoke and manage emotions",
-            description: "Use emotions to inspire and motivate audiences.",
-            deliverables: [
-              "Evoke three primary emotions",
-              "Positive audience motivation",
-              "Inspiring message"
-            ],
-            time: "8-10 minutes",
-            tools: "No lectern or notes allowed",
-            tips: [
-              "Understand emotional triggers",
-              "Practice authentic delivery",
-              "Monitor audience response"
-            ]
-          },
-          {
-            number: 16,
-            title: "Stage Presence",
-            objective: "Develop powerful stage presence",
-            description: "Learn to command attention and engage audiences effectively.",
-            deliverables: [
-              "Commanding presence",
-              "Audience engagement",
-              "Professional demeanor"
-            ],
-            time: "8-10 minutes",
-            tools: "No notes allowed",
-            tips: [
-              "Practice stage movement",
-              "Develop presence",
-              "Focus on audience connection"
-            ]
-          }
-        ]
-      }
-    ]
-  };
-
+        {
+          "number": 6,
+          "title": "Vocal Variety",
+          "objective": "Enhance your vocal delivery",
+          "description": "Learn to use your voice effectively to engage and captivate the audience.",
+          "deliverables": [
+            "Varied pace, pitch, and volume",
+            "Strategic use of pauses and emphasis",
+            "Engaging and dynamic vocal delivery"
+          ],
+          "time": "5-7 minutes",
+          "tools": "Microphone and presentation software optional",
+          "parts": [
+            {
+              "part": 1,
+              "type": "Speech Analysis",
+              "description": "Analyze a selected speech for its use of vocal variety."
+            },
+            {
+              "part": 2,
+              "type": "Speech Practice",
+              "description": "Deliver a speech incorporating elements of vocal variety and present your analysis."
+            }
+          ],
+          "tips": [
+            "Practice varying your vocal tone and rhythm",
+            "Record and listen to your practice sessions",
+            "Experiment with different vocal techniques"
+          ]
+        },
+        {
+          "number": 7,
+          "title": "Body Language",
+          "objective": "Master non-verbal communication",
+          "description": "Learn to use gestures, movement, and facial expressions effectively.",
+          "deliverables": [
+            "Appropriate body language",
+            "Purposeful gestures",
+            "Engaging facial expressions"
+          ],
+          "time": "6-8 minutes",
+          "tools": "Video recording optional",
+          "parts": [
+            {
+              "part": 1,
+              "type": "Speech Analysis",
+              "description": "Analyze a selected speech for its use of body language and present your analysis."
+            },
+            {
+              "part": 2,
+              "type": "Speech Practice",
+              "description": "Deliver a speech incorporating effective body language."
+            }
+          ],
+          "tips": [
+            "Practice in front of a mirror",
+            "Record your movements",
+            "Align gestures with content"
+          ]
+        },
+        {
+          "number": 8,
+          "title": "Researching A Topic",
+          "objective": "Develop research and presentation skills",
+          "description": "Research, organize, and present complex information clearly.",
+          "deliverables": [
+            "Well-researched technical content",
+            "Clear presentation with handouts",
+            "Effective handling of Q&A session"
+          ],
+          "time": "7-9 minutes (speech) + 3-5 minutes (Q&A)",
+          "tools": "Microphone, notes, and presentation software optional",
+          "parts": [
+            {
+              "part": 1,
+              "type": "Speech Analysis",
+              "description": "Analyze a selected informative speech for its research, presentation, and Q&A handling and present your analysis."
+            },
+            {
+              "part": 2,
+              "type": "Speech Practice",
+              "description": "Deliver an informative speech with supporting materials and handle a Q&A session."
+            }
+          ],
+          "tips": [
+            "Use a variety of credible sources",
+            "Organize information logically",
+            "Practice anticipating potential questions"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Speaking Techniques",
+      "description": "Master advanced techniques for impactful speeches",
+      "milestone": {
+        "name": "Advanced Speaker",
+        "requirements": "Complete all 8 projects in this section",
+        "badge": "🌟"
+      },
+      "projects": [
+        {
+          "number": 9,
+          "title": "Speech Development",
+          "objective": "Master rhetorical devices",
+          "description": "Learn and apply various rhetorical techniques in speeches.",
+          "deliverables": [
+            "Multiple rhetorical devices used",
+            "Effective argumentation",
+            "Persuasive delivery"
+          ],
+          "time": "5-7 minutes",
+          "tools": "Notes optional",
+          "parts": [
+            {
+              "part": 1,
+              "type": "Speech Analysis",
+              "description": "Analyze a selected speech for its use of rhetorical devices and present your analysis."
+            },
+            {
+              "part": 2,
+              "type": "Speech Practice",
+              "description": "Deliver a speech incorporating various rhetorical devices."
+            }
+          ],
+          "tips": [
+            "Research different rhetorical techniques",
+            "Practice using devices naturally",
+            "Match devices to speech content and purpose"
+          ]
+        },
+        {
+          "number": 10,
+          "title": "Knowing Your Audience",
+          "objective": "Tailor your speech to specific audiences",
+          "description": "Learn to adapt your message and delivery based on audience demographics and interests.",
+          "deliverables": [
+            "Audience research demonstrated",
+            "Speech tailored to audience needs",
+            "Adaptive delivery based on audience response"
+          ],
+          "time": "5-7 minutes",
+          "tools": "None",
+          "parts": [
+            {
+              "part": 1,
+              "type": "Speech Analysis",
+              "description": "Analyze a selected speech for its adaptation to a specific audience and present your analysis."
+            },
+            {
+              "part": 2,
+              "type": "Speech Practice",
+              "description": "Deliver a speech tailored to the specific audience present."
+            }
+          ],
+          "tips": [
+            "Gather information about your audience",
+            "Adjust language and content accordingly",
+            "Pay attention to audience feedback during your speech"
+          ]
+        },
+        {
+          "number": 11,
+          "title": "Presentation Software",
+          "objective": "Utilize presentation software effectively",
+          "description": "Learn to create engaging visual aids and integrate them seamlessly into your speech.",
+          "deliverables": [
+            "Visually appealing and informative slides",
+            "Effective use of images and text",
+            "Seamless integration of slides with speech content"
+          ],
+          "time": "8-10 minutes",
+          "tools": "Presentation software",
+          "parts": [
+            {
+              "part": 1,
+              "type": "Speech Analysis",
+              "description": "Analyze a selected presentation for its use of visual aids and present your analysis."
+            },
+            {
+              "part": 2,
+              "type": "Speech Practice",
+              "description": "Deliver a speech incorporating effective presentation software."
+            }
+          ],
+          "tips": [
+            "Follow design principles for clarity",
+            "Use visuals to enhance, not distract",
+            "Practice transitioning smoothly between slides"
+          ]
+        },
+        {
+          "number": 12,
+          "title": "Inconvenient Allies",
+          "objective": "Master microphone techniques and stage presence",
+          "description": "Learn to use microphones effectively and maintain a strong stage presence while managing technical equipment.",
+          "deliverables": [
+            "Comfortable use of hand-held or lectern microphone",
+            "Confident stage presence",
+            "Seamless integration of microphone and movement"
+          ],
+          "time": "5-7 minutes",
+          "tools": "Microphone",
+          "parts": [
+            {
+              "part": 1,
+              "type": "Speech Analysis",
+              "description": "Analyze a selected speech for the speaker's use of a microphone and stage presence and present your analysis."
+            },
+            {
+              "part": 2,
+              "type": "Speech Practice",
+              "description": "Deliver a speech using a microphone and maintaining an engaging stage presence."
+            }
+          ],
+          "tips": [
+            "Practice holding and speaking into a microphone",
+            "Move naturally while maintaining microphone control",
+            "Project your voice effectively"
+          ]
+        },
+        {
+          "number": 13,
+          "title": "Using Humour",
+          "objective": "Incorporate humor strategically",
+          "description": "Learn to use humor effectively to engage your audience and enhance your message.",
+          "deliverables": [
+            "Appropriate and well-timed humor",
+            "Variety of humor techniques",
+            "Humor supports the speech's message and tone"
+          ],
+          "time": "5-7 minutes",
+          "tools": "Microphone and presentation software optional",
+          "parts": [
+            {
+              "part": 1,
+              "type": "Speech Analysis",
+              "description": "Analyze a selected speech for its use of humor and present your analysis."
+            },
+            {
+              "part": 2,
+              "type": "Speech Practice",
+              "description": "Deliver a speech incorporating appropriate humor."
+            }
+          ],
+          "tips": [
+            "Know your audience's humor preferences",
+            "Practice delivery and timing",
+            "Don't force it - let humor flow naturally"
+          ]
+        },
+        {
+          "number": 14,
+          "title": "Using Anecdotes",
+          "objective": "Connect with your audience through stories",
+          "description": "Learn to use anecdotes and personal stories to make your speeches relatable and memorable.",
+          "deliverables": [
+            "Engaging and relevant anecdotes",
+            "Effective storytelling techniques",
+            "Anecdotes enhance the speech's message and impact"
+          ],
+          "time": "7-9 minutes",
+          "tools": "Microphone and presentation software optional",
+          "parts": [
+            {
+              "part": 1,
+              "type": "Speech Analysis",
+              "description": "Analyze a selected speech for its use of anecdotes and personal stories and present your analysis."
+            },
+            {
+              "part": 2,
+              "type": "Speech Practice",
+              "description": "Deliver a speech incorporating effective anecdotes."
+            }
+          ],
+          "tips": [
+            "Choose stories that resonate with your message",
+            "Practice your storytelling delivery",
+            "Use vivid language and emotional connection"
+          ]
+        },
+        {
+          "number": 15,
+          "title": "Using Emotion",
+          "objective": "Evoke emotions to move your audience",
+          "description": "Learn to use emotional appeals effectively to connect with your audience and inspire action.",
+          "deliverables": [
+            "Strategic use of emotional language",
+            "Elicitation of targeted emotions",
+            "Emotional appeals support the speech's purpose"
+          ],
+          "time": "7-9 minutes",
+          "tools": "None",
+          "parts": [
+            {
+              "part": 1,
+              "type": "Speech Analysis",
+              "description": "Analyze a selected speech for its use of emotional appeals and present your analysis."
+            },
+            {
+              "part": 2,
+              "type": "Speech Practice",
+              "description": "Deliver a speech incorporating strategic emotional elements."
+            }
+          ],
+          "tips": [
+            "Understand the power of different emotions",
+            "Use personal stories and relatable examples",
+            "Speak with authenticity and passion"
+          ]
+        },
+        {
+          "number": 16,
+          "title": "Stage Presence",
+          "objective": "Command attention with confidence",
+          "description": "Develop a powerful stage presence that captivates your audience and reinforces your message.",
+          "deliverables": [
+            "Confident and engaging stage presence",
+            "Effective use of space and movement",
+            "Strong vocal projection and eye contact"
+          ],
+          "time": "7-9 minutes",
+          "tools": "Microphone optional",
+          "parts": [
+            {
+              "part": 1,
+              "type": "Speech Analysis",
+              "description": "Analyze a selected speech for the speaker's stage presence and present your analysis."
+            },
+            {
+              "part": 2,
+              "type": "Speech Practice",
+              "description": "Deliver a speech demonstrating a commanding stage presence."
+            }
+          ],
+          "tips": [
+            "Practice posture and body language",
+            "Use the stage effectively",
+            "Connect with your audience visually"
+          ]
+        }
+      ]
+    }
+  ]
+}
   export const advancedPaths = [
     {
       title: "Storytelling",

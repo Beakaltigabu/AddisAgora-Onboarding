@@ -10,20 +10,24 @@ import RecognitionSection from '../components/onboarding/RecognitionSection'
 import GettingStarted from '../components/onboarding/GettingStarted'
 import ResourcesSection from '../components/onboarding/ResourcesSection'
 import FeedbackForm from '../components/onboarding/FeedbackForm'
+import InteractiveTour from '../components/onboarding/Tour/InteractiveTour'
 
 const Onboarding = () => {
   return (
     <Layout>
-      <HeroSection />
-      <DiscoverSection />
-      <EducationalJourney />
-      <MeetingRoles />
-      <CommunitySection />
-      <ImprovementCycle />
-      <RecognitionSection />
-      <ResourcesSection />
-      <GettingStarted />
-      <FeedbackForm />
+      <InteractiveTour />
+      <div id="content">
+        <HeroSection />
+        <DiscoverSection />
+        <EducationalJourney />
+        <MeetingRoles />
+        <CommunitySection />
+        <ImprovementCycle />
+        <RecognitionSection />
+        <GettingStarted />
+        <ResourcesSection />
+        <FeedbackForm />
+      </div>
     </Layout>
   )
 }

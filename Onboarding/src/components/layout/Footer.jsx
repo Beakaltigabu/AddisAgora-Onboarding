@@ -48,7 +48,7 @@ const Footer = () => {
             <p className="text-white/80">Empowering communicators, inspiring leaders, transforming the world</p>
           </div>
 
-          <div>
+          {/* <div>
             <h4 className="text-lg font-bold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
@@ -76,7 +76,7 @@ const Footer = () => {
                 </button>
               </li>
             </ul>
-          </div>
+          </div> */}
 
           <div>
             <h4 className="text-lg font-bold mb-4">Connect With Us</h4>

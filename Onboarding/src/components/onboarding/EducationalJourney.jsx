@@ -6,56 +6,85 @@ import { basicEducationalPath, advancedPaths } from '../../data/completeEducatio
 import { XMarkIcon } from '@heroicons/react/24/outline';
 
 const PathSection = ({ title, description, isRequired = false }) => (
-  <div className="bg-white p-6 rounded-lg shadow-lg mb-8">
-    <h6 className="text-xl font-semibold text-text-heading mb-2">
-      {title}
-      {isRequired && (
-        <span className="ml-2 text-sm text-primary font-normal">
-          This is the foundation of the program and is mandatory. It consists of 16 projects. It teaches the fundamentals of public speaking and helps overcome fear of public speaking. It includes three sections: 'The Initial Projects', 'Basics of Speaking', and 'Speaking Techniques'.
-After completing the Basic Educational Path, members receive the 'Qualified Speaker' award.
-(Mandatory)
-        </span>
-      )}
-    </h6>
-    <p className="text-text-body">{description}</p>
-  </div>
-);
-
-const ProjectCard = ({ project, onClick }) => (
   <motion.div
-    initial={{ opacity: 0, y: 20 }}
-    animate={{ opacity: 1, y: 0 }}
-    exit={{ opacity: 0, y: -20 }}
-    className="bg-white rounded-lg shadow-lg p-4 md:p-6"
-    whileHover={{ y: -5 }}
+    className="bg-white p-6 rounded-lg shadow-lg mb-8"
+    whileHover={{ scale: 1.02 }}
+    transition={{ type: "spring", stiffness: 300 }}
   >
-    <div className="flex items-center justify-between mb-4">
-      <div className="flex items-center gap-2">
-        {project.number && (
-          <span className="text-sm text-primary-light">#{project.number}</span>
-        )}
-        <span className="text-primary font-semibold">
-          {project.title}
-        </span>
+    <div className="flex items-start gap-4">
+      <div className="text-3xl">
+        {isRequired ? "🎓" : "🚀"}
       </div>
-      <span className="text-sm text-text-body">
-        {project.duration || project.time}
-      </span>
+      <div>
+        <h6 className="text-xl font-semibold text-text-heading mb-2">
+          {title}
+          {isRequired && (
+            <span className="ml-2 text-sm text-primary font-normal">
+              This is the foundation of the program and is mandatory. It consists of 16 projects. It teaches the fundamentals of public speaking and helps overcome fear of public speaking. It includes three sections: 'The Initial Projects', 'Basics of Speaking', and 'Speaking Techniques'.
+After completing the Basic Educational Path, members receive the 'Qualified Speaker' award.
+            </span>
+          )}
+        </h6>
+        <p className="text-text-body">{description}</p>
+      </div>
     </div>
-    <p className="text-text-body text-sm line-clamp-2 mb-4">
-      {project.description}
-    </p>
-    <button
-      onClick={onClick}
-      className="text-primary text-sm hover:underline flex items-center gap-1"
-    >
-      View Details
-      <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-      </svg>
-    </button>
   </motion.div>
 );
+
+
+const ProjectCard = ({ project, onClick }) => {
+  const getProjectIcon = (number) => {
+    if (number <= 4) return "📝"; // Basic projects
+    if (number <= 8) return "🎤"; // Speaking projects
+    return "⭐"; // Advanced projects
+  };
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -20 }}
+      whileHover={{
+        y: -5,
+        scale: 1.02,
+        boxShadow: "0 10px 20px rgba(0,0,0,0.1)"
+      }}
+      className="bg-white rounded-lg shadow-lg p-4 md:p-6"
+    >
+      <div className="flex items-center justify-between mb-4">
+        <div className="flex items-center gap-2">
+          <span className="text-2xl">{getProjectIcon(project.number)}</span>
+          {project.number && (
+            <span className="text-sm text-primary-light">#{project.number}</span>
+          )}
+          <span className="text-primary font-semibold">
+            {project.title}
+          </span>
+        </div>
+        <span className="text-sm text-text-body">
+          {project.duration || project.time}
+        </span>
+      </div>
+
+      <p className="text-text-body text-sm line-clamp-2 mb-4">
+        {project.description}
+      </p>
+
+      <motion.button
+        onClick={onClick}
+        className="text-primary text-sm hover:underline flex items-center gap-1"
+        whileHover={{ x: 5 }}
+        whileTap={{ scale: 0.95 }}
+      >
+        View Details
+        <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+        </svg>
+      </motion.button>
+    </motion.div>
+  );
+};
+
 
 const ProjectModal = ({ project, onClose }) => (
   <motion.div
@@ -120,6 +149,18 @@ const ProjectModal = ({ project, onClose }) => (
           </div>
         )}
 
+        {project.parts && (
+          <div>
+            <h4 className="font-semibold mb-2">Project Parts</h4>
+            {project.parts.map((part, index) => (
+              <div key={index} className="bg-gray-50 p-4 rounded-lg mb-3">
+                <h5 className="font-medium mb-2">Part {part.part}: {part.type}</h5>
+                <p className="text-text-body">{part.description}</p>
+              </div>
+            ))}
+          </div>
+        )}
+
         {project.tips && (
           <div>
             <h4 className="font-semibold mb-2">Tips</h4>
@@ -155,6 +196,7 @@ const ProjectModal = ({ project, onClose }) => (
     </motion.div>
   </motion.div>
 );
+
 
 const EducationalJourney = () => {
   const [activePath, setActivePath] = useState('basic');
